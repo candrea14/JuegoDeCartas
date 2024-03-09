@@ -76,6 +76,7 @@ public class Jugador {
     }
 
     public String getGrupos() {
+        organizar();
         Carta[] copia_cartas = cartas.clone();
         ArrayList<Carta> copia = new ArrayList<Carta>(Arrays.asList(copia_cartas));
         int totalGrupos = 0;
@@ -199,5 +200,4 @@ public class Jugador {
         String puntajeString = String.valueOf(puntaje);
         return puntajeString;
     }
-
 }
